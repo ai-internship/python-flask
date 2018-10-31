@@ -1,0 +1,30 @@
+ขั้นตอนการทำheroku api
+1.ไปที่ https://dashboard.heroku.com/apps ==> กด create new appเพื่อสร้าง
+
+
+1.พิมในcmdว่า heroku login
+2.ใส่email เเละ password
+1.ดาวโหลดapidemo
+2.cd ไปที่ apidemo เช่นC:\Users\user.DESKTOP-HGCB2QF\Desktop\apidemo
+3.cmd กด pip install -r requirements.txt
+4.cd ไปที่ apidemo
+5.ใช้ipython กด ipython
+6.import app
+7.ลองทดลองด้วยการกดapp.get_stockprice('dtac')
+8.quit
+9.ไปที่https://dashboard.heroku.com/apps
+10กดซื่อที่เราสร้างอย่างของผมคือmickeyapi
+11.กดที่หน้าdeploy
+12ลงตามขั้นตอนที่deployบอกเช่น
+13.กดgit init
+14.กดheroku git:remote -a mickeyapi
+15.git add .
+16.git commit -am "first commit mickeyapi" /* comment ไรก็ได้*/
+17.กด git push heroku master
+18.กด heroku logs --tail
+
+
+วิธีใช้งาน
+1.function heyyou http://mickeyapi.herokuapp.com/heyyou?name=mickey
+
+
